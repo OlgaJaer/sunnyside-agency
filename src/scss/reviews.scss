@@ -1,0 +1,93 @@
+.reviews {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+
+  &__block {
+    padding: 160px 165px;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 25px;
+    letter-spacing: 5px;
+    text-align: center;
+    color: $light-grey;
+    margin-bottom: 81px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+  }
+
+  &__img {
+    margin-bottom: 58px;
+  }
+
+  &__text {
+    font-family: 'Barlow';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #5B636D;
+    margin-bottom: 69px;
+    text-align: center;
+  }
+
+  &__author {
+    // font-family: $font-family;
+    font-size: 18px;
+
+    font-weight: 900;
+    line-height: 22px;
+    text-align: center;
+    &-name {
+      margin-bottom: 9px;
+    }
+    &-position {
+      color: $light-grey;
+
+    }
+  }
+  
+  @media (max-width: 991px) {
+    &__block {
+      padding: 60px 24px ;
+    }
+  }
+  @media (max-width: 767px) {
+    &__block {
+      padding: 60px 24px ;
+    }
+
+    &__title {
+      margin-bottom: 64px;
+    }
+
+    
+
+    &__list {
+      grid-template-columns: 1fr;
+    }
+    &__card {
+      margin-bottom: 64px;
+    }
+    &__img {
+      margin-bottom: 32px;
+    }
+    &__text {
+      margin-bottom: 32px;
+    }
+  }
+}
